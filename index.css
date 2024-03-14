@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open  Sans", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #0d0d0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  padding: 20px;
+  width: 63rem;
+  background-color: #6e6e6d;
+  border-radius: 15px;
+  box-shadow: -8px -8px 15px rgba(206, 252, 146, 0.1),
+    5px 5px 15px rgba(223, 203, 203, 0.966);
+  cursor: default;
+}
+.card .info {
+  color: #c58816b6;
+  font-size: 18px;
+}
+.card .head {
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  color: #e8ffdc;
+  font-size: 30px;
+}
+.card .quiz {
+  padding: 20px;
+  padding-bottom: 12px;
+  justify-self: start;
+  color: #ffdfd1;
+}
+.card .btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 32px;
+}
+.card .btn button {
+  padding: 10px;
+  width: 8rem;
+  height: 2.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: bisque;
+}
+.card .opt {
+  margin-left: 40px;
+  font-size: 20px;
+  padding: 8px;
+  font-weight: 700;
+  font-style: normal;
+  color: #cce4f3;
+}
+.myScore {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  padding-left: 50px;
+  color: transparent;
+  animation: color-change 3s ease-in-out infinite;
+}
+@keyframes color-change {
+  0% {
+    color: rgb(253, 53, 53);
+  }
+  20% {
+    color: rgb(235, 217, 62);
+  }
+  40% {
+    color: rgb(75, 216, 9);
+  }
+  60% {
+    color: rgb(36, 197, 189);
+  }
+  80% {
+    color: rgb(97, 99, 214);
+  }
+  100% {
+    color: rgb(241, 38, 225);
+  }
+}
+
+.myScore button {
+  justify-self: flex-end;
+  padding: 10px;
+  width: 8rem;
+  height: 2.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: bisque;
+}
